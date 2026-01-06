@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>FORZA CARS Galerim</title>
+<style>
+body { font-family: Arial; background-color: #f5f5f5; text-align: center; margin: 50px; }
+h1 { color: #4a00e0; }
+img { margin: 10px; border: 2px solid #ccc; border-radius: 8px; }
+</style>
+</head>
+<body>
+<h1>FORZA CARS Galerim 🎨</h1>
+<div id="gallery"></div>
+
+<script>
+// FORZA CARS klasöründeki resim isimlerini buraya yaz
+const images = [
+    "resim1.png",
+    "resim2.jpg",
+    "resim3.png",
+    // ... kalan tüm resimlerin isimleri
+];
+
+const gallery = document.getElementById("gallery");
+
+images.forEach(imgName => {
+    const image = document.createElement("img");
+    image.src = "FORZA CARS/" + imgName; // klasör adı burada
+    image.width = 150; // isteğe göre boyut
+    gallery.appendChild(image);
+});
+</script>
+
+</body>
+</html>
